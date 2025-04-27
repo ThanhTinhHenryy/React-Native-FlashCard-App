@@ -1,3 +1,4 @@
+// ** style của phần (auth)
 // styles/auth.styles.ts
 import { COLORS } from "@/constants/theme";
 import { StyleSheet, Dimensions } from "react-native";
@@ -11,7 +12,7 @@ export const styles = StyleSheet.create({
   },
   brandSection: {
     alignItems: "center",
-    marginTop: height * 0.12,
+    marginTop: height * 0.08,
   },
   logoContainer: {
     width: 60,
@@ -36,11 +37,17 @@ export const styles = StyleSheet.create({
     letterSpacing: 1,
     textTransform: "lowercase",
   },
+  tenThanhVien: {
+    fontSize: 14,
+    color: COLORS.surfaceLight,
+    letterSpacing: 2,
+    textTransform: "uppercase",
+  },
   illustrationContainer: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    paddingHorizontal: 40,
+    paddingHorizontal: 24,
   },
   illustration: {
     width: width * 0.75,
@@ -50,9 +57,10 @@ export const styles = StyleSheet.create({
   loginSection: {
     width: "100%",
     paddingHorizontal: 24,
-    paddingBottom: 40,
+    paddingBottom: 30,
     alignItems: "center",
   },
+  // *
   googleButton: {
     flexDirection: "row",
     alignItems: "center",
@@ -110,5 +118,33 @@ export const styles = StyleSheet.create({
     shadowOpacity: 0.15,
     shadowRadius: 12,
     elevation: 5,
+  },
+  forgotPasswordText: {
+    color: COLORS.white,
+    fontSize: 14,
+    marginTop: 10,
+    textDecorationLine: "underline",
+  },
+  socialLoginSection: {
+    marginTop: 20, // Khoảng cách phía trên
+    flexDirection: "row", // Sắp xếp các nút theo hàng ngang
+    justifyContent: "center", // Căn giữa các nút
+    alignItems: "center", // Căn giữa theo chiều dọc
+    gap: 12, // Khoảng cách giữa các nút
+  },
+  socialButton: {
+    flexDirection: "row", // Sắp xếp biểu tượng và văn bản theo hàng ngang
+    alignItems: "center", // Căn giữa theo chiều dọc
+    paddingVertical: 12, // Khoảng cách phía trên và dưới nút
+    paddingHorizontal: 20, // Khoảng cách trái và phải nút
+    backgroundColor: COLORS.primary, // Màu nền của nút (có thể thay đổi màu theo ý thích)
+    borderRadius: 8, // Bo tròn góc nút
+    elevation: 2, // Thêm hiệu ứng đổ bóng (để nhìn nổi bật hơn)
+  },
+  socialButtonText: {
+    marginLeft: 8, // Khoảng cách giữa biểu tượng và văn bản
+    fontSize: 16, // Kích thước chữ
+    color: COLORS.surface, // Màu chữ của nút
+    fontWeight: "bold", // Đặt chữ đậm
   },
 });
